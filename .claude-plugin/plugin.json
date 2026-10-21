@@ -1,0 +1,13 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "designtaste-by-oasis",
+  "description": "Orchestrates website visual direction, wireframe review, and design system generation.",
+  "author": {
+    "name": "oasis"
+  },
+  "homepage": "https://github.com/oasis/designtaste-by-oasis",
+  "repository": "https://github.com/oasis/designtaste-by-oasis",
+  "version": "0.1.0",
+  "license": "MIT",
+  "skills": "./skills"
+}

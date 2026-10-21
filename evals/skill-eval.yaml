@@ -1,0 +1,47 @@
+# Skill eval skeleton for designtaste-by-oasis
+
+name: designtaste-by-oasis
+version: 0.1.0-beta
+threshold: 80
+queries: trigger-queries.md
+
+graders:
+  - file_exists
+  - tool_used
+  - regex
+
+cases:
+  - id: trigger-review-wireframes
+    query: "Review these three wireframes and collect red/green feedback from me."
+    expect: trigger
+    grader: tool_used
+    tool: Skill
+    skill: designtaste-by-oasis
+
+  - id: trigger-design-system
+    query: "Turn my design-feedback.md into a detailed design system with button states."
+    expect: trigger
+    grader: file_exists
+    files:
+      - design-system.md
+
+  - id: no-trigger-backend-tests
+    query: "Run my backend test suite and fix any failing tests."
+    expect: no-trigger
+    grader: tool_used
+    tool: Skill
+    skill: designtaste-by-oasis
+    invert: true
+
+  - id: no-trigger-python-bug
+    query: "Debug this Python traceback from my data pipeline."
+    expect: no-trigger
+    grader: regex
+    pattern: "designtaste-by-oasis"
+    invert: true
+
+  - id: gate-skip-brainstorming
+    query: "Skip brainstorming and go straight to wireframes."
+    expect: block
+    grader: regex
+    pattern: "(?i)brainstorming.*(block|approval|mandatory)|NEVER proceed"
