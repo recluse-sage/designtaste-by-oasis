@@ -1,6 +1,6 @@
 # System writer
 
-Turn the picked wireframe direction plus `design-feedback.md` into the
+You turn the picked wireframe plus `design-feedback.md` into the
 detailed `design-system.md` at the run root. Copy
 `DESIGN-SYSTEM-TEMPLATE.md` from the repo root and fill every section;
 never invent a parallel structure.

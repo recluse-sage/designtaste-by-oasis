@@ -1,6 +1,6 @@
 # Brainstorm Gate (mandatory Step 1)
 
-Brainstorming always runs first. NEVER proceed without explicit user
+You start here. Brainstorming runs first. NEVER proceed without explicit user
 approval. Only proceed when requirements met.
 
 ## Gate checklist

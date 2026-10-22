@@ -1,6 +1,6 @@
 # Copy slim
 
-Draft short, scannable copy with clear CTA placement. Draft copy is
+You keep words short and clear. Draft short, scannable copy with clear CTA placement. Draft copy is
 allowed at this stage: placeholder wording is fine as long as
 structure and CTA slots are real.
 

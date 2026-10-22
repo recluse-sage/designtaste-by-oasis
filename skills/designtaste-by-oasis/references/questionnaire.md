@@ -1,6 +1,6 @@
 # Questionnaire
 
-Ask these before collecting examples. Keep it fast: one-line answers
+A few quick questions first. Ask these before collecting examples. Keep it fast: one-line answers
 are fine. Do not proceed to collect and rank until all answers plus
 links below are in hand.
 

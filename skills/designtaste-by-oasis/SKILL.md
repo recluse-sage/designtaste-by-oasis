@@ -1,6 +1,6 @@
 ---
 name: designtaste-by-oasis
-description: Orchestrates website visual direction, wireframe review, and design system generation. It runs mandatory brainstorming first, then layout, website taste, buttons, and slim copy to produce three reviewable wireframes and a detailed design-system.md. Use when the user wants visual direction, wireframe review, design system output, or an orchestrator for website taste decisions.
+description: Helps with website visual direction, wireframe review, and design system notes. It starts with brainstorming, then covers layout, website taste, buttons, and short copy to make three wireframes to click through and a clear design-system.md. Use it when the user wants help with visual direction, wireframe review, design system output, or website taste choices.
 license: MIT
 metadata:
   version: 0.1.0

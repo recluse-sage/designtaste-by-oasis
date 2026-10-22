@@ -1,6 +1,7 @@
 # Trigger queries for designtaste-by-oasis
 
-20 probe queries: 10 should trigger the skill, 10 should not.
+20 short checks to see if the skill wakes up when it should.
+10 should load the skill. 10 should leave it off.
 Used with `evals/skill-eval.yaml`.
 
 ## Should trigger (expect: skill loads)

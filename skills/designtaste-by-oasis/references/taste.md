@@ -1,6 +1,6 @@
 # Taste direction
 
-Build a thin taste profile from examples before committing to
+You pick a feel you like first. Build a thin taste profile from examples before committing to
 tokens. Thin means: a few directional words plus per-part verdicts,
 not a full design system.
 

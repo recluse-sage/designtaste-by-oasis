@@ -1,3 +1,6 @@
+<!-- A calm place to keep what you picked and why. -->
+<!-- Copy this file, then fill in each part below. -->
+
 # design-system.md - {{PROJECT_NAME}}
 
 > Generated {{DATE}} from picked direction **{{PICKED_DIRECTION}}**.

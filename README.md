@@ -1,11 +1,10 @@
 # designtaste-by-oasis
 
-Thin orchestrator skill that runs website visual direction end-to-end:
-mandatory brainstorming first, then layout, taste, buttons, copy-slim,
-3 wireframes, clickable review on `:8000`, and a detailed
-`design-system.md`.
+A small skill that helps you shape how your website looks, from start to finish.
+It starts with brainstorming. Then it walks through layout, taste, buttons, and short copy.
+You get 3 wireframes to click through on `:8000`, plus a clear `design-system.md` to keep.
 
-Solo dev, local files. No hosted backend in v1.
+Made for one person working with local files. No hosted backend in v1.
 
 ## Layout
 

@@ -1,6 +1,6 @@
 # Buttons
 
-Define the core button set with all states. V1 covers the core set
+You set how buttons look and act. Define the core button set with all states. V1 covers the core set
 only: primary, secondary, and text/ghost. No icon system here.
 
 ## Core set

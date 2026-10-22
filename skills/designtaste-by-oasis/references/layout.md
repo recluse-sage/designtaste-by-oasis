@@ -1,6 +1,6 @@
 # Layout
 
-Capture IA, section hierarchy, and wireframe skeleton before any
+You sketch the page bones first. Capture IA, section hierarchy, and wireframe skeleton before any
 visual styling. Output a section-by-section skeleton, not finished
 design.
 

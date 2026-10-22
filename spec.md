@@ -4,7 +4,7 @@ Status: Draft for review
 Name: designtaste-by-oasis (unique; design-taste and design-taste-frontend taken)
 
 ## 1. Goal
-Thin orchestrator skill that runs website visual-direction end-to-end: brainstorming mandatory first, then layout, taste, buttons, copy-slim, 3 wireframes, clickable review, detailed design-system.md.
+Thin orchestrator skill that helps you shape website visual direction from start to finish. Brainstorming comes first and is required. Then come layout, taste, buttons, and copy-slim. You get 3 wireframes, a clickable review, and a clear design-system.md.
 
 Solo dev, local files. No hosted backend in v1.
 
