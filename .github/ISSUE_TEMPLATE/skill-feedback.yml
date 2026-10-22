@@ -1,0 +1,70 @@
+name: Skill feedback
+description: Tell us how designtaste-by-oasis worked for you.
+title: "[feedback]: "
+labels: ["feedback"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Skill version / SHA
+      description: Tag or commit you installed (e.g. v0.1.1-beta).
+    validations:
+      required: true
+  - type: input
+    id: install
+    attributes:
+      label: Install method
+      description: Exact command you used.
+      placeholder: npx skills add recluse-sage/designtaste-by-oasis
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent host
+      description: e.g. claude-code, cursor, opencode.
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Repro prompt
+      description: What you asked the agent, word for word if you can.
+    validations:
+      required: true
+  - type: dropdown
+    id: trigger
+    attributes:
+      label: Did the skill fire when it should?
+      options:
+        - Yes
+        - No, it did not fire
+        - It fired when it should not have
+    validations:
+      required: true
+  - type: dropdown
+    id: quality
+    attributes:
+      label: Output quality (1-5)
+      options:
+        - "5 - used it as-is"
+        - "4 - small tweaks"
+        - "3 - usable with fixes"
+        - "2 - mostly wrong"
+        - "1 - unusable"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect, and what did you get?
+  - type: textarea
+    id: security
+    attributes:
+      label: Anything worrying?
+      description: Unexpected network calls, file writes, secrets asked, odd commands. Say none if clean.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / output
+      description: Paste relevant output or wireframe notes.
