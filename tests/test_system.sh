@@ -7,6 +7,7 @@ BASE="$(cd "$(dirname "$0")/.." && pwd)"
 SKILL="$BASE/skills/designtaste-by-oasis"
 WRITER="$SKILL/references/system-writer.md"
 TEMPLATE="$BASE/DESIGN-SYSTEM-TEMPLATE.md"
+INSKILL="$SKILL/assets/DESIGN-SYSTEM-TEMPLATE.md"
 README="$BASE/README.md"
 SKILLMD="$SKILL/SKILL.md"
 PASS=0; FAIL=0
@@ -32,6 +33,12 @@ if [ ! -f "$TEMPLATE" ]; then
   exit 1
 fi
 ok "exists DESIGN-SYSTEM-TEMPLATE.md"
+
+if [ -f "$INSKILL" ]; then
+  ok "exists skills/designtaste-by-oasis/assets/DESIGN-SYSTEM-TEMPLATE.md"
+else
+  bad "missing skills/designtaste-by-oasis/assets/DESIGN-SYSTEM-TEMPLATE.md"
+fi
 
 # --- system-writer.md contract: picked direction + feedback in, system out. ---
 for needle in 'design-feedback.md' 'design-system.md' 'picked'; do

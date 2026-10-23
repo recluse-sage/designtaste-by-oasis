@@ -22,6 +22,7 @@ warning on stderr. The output always covers all ten fixed parts.
 import argparse
 import json
 import re
+import subprocess
 import sys
 import urllib.request
 from pathlib import Path
@@ -67,6 +68,16 @@ def try_fetch(url):
         with urllib.request.urlopen(req, timeout=FETCH_TIMEOUT) as resp:
             resp.read(1024)
             return 200 <= resp.status < 400
+    except Exception:
+        pass
+    try:
+        proc = subprocess.run(
+            ["curl", "-sSL", "--max-time", "10", url],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            timeout=12,
+        )
+        return proc.returncode == 0
     except Exception:
         return False
 

@@ -4,6 +4,7 @@ You turn the picked wireframe plus `design-feedback.md` into the
 detailed `design-system.md` at the run root. Copy
 `DESIGN-SYSTEM-TEMPLATE.md` from the repo root and fill every section;
 never invent a parallel structure.
+Shipped copy: `assets/DESIGN-SYSTEM-TEMPLATE.md` (same content as the repo root, packaged for `npx skills add`).
 
 ## Inputs (all required before writing)
 

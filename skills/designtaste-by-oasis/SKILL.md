@@ -16,12 +16,15 @@ Scope: this skill operates on the run root by default (the directory where it is
 
 - [Invoke order](#invoke-order)
 - [Brainstorming (mandatory gate)](references/brainstorm-gate.md)
+- [Questionnaire](references/questionnaire.md)
 - [Layout](references/layout.md)
 - [Taste direction](references/taste.md)
 - [Buttons](references/buttons.md)
 - [Copy slim](references/copy-slim.md)
-- [Questionnaire](references/questionnaire.md)
 - [System writer](references/system-writer.md)
+- [Review rounds](references/review-rounds.md)
+- [Sub-skills](references/sub-skills.md)
+- [Design system template](assets/DESIGN-SYSTEM-TEMPLATE.md)
 
 ## Invoke order
 
@@ -42,35 +45,35 @@ that brief.
 - If the architecture input file is missing, stop and ask for it.
   Do not hallucinate structure; ask instead.
 
-### Step 2 - Layout
+### Step 2 - Questionnaire and collect
+
+- Read [references/questionnaire.md](references/questionnaire.md).
+- Ask the 5 quick questions plus 2-3 liked links and 1 disliked link
+  with why, then record verdicts for each fixed part into `ranked-parts.json`.
+
+### Step 3 - Layout
 
 - Read [references/layout.md](references/layout.md).
 - Capture IA, section hierarchy, and wireframe skeleton before any
   visual styling.
 
-### Step 3 - Taste direction
+### Step 4 - Taste direction
 
 - Read [references/taste.md](references/taste.md).
 - Build a thin taste profile from examples (systemdesignhunt plus
   user URLs) before committing to tokens.
 
-### Step 4 - Buttons
+### Step 5 - Buttons
 
 - Read [references/buttons.md](references/buttons.md).
 - Define the core button set with all states: default, hover, active,
   disabled, loading, error, empty.
 
-### Step 5 - Copy slim
+### Step 6 - Copy slim
 
 - Read [references/copy-slim.md](references/copy-slim.md).
 - Draft short, scannable copy with clear CTA placement. Draft copy is
   allowed at this stage.
-
-### Step 6 - Questionnaire and collect
-
-- Read [references/questionnaire.md](references/questionnaire.md).
-- Ask the 5 quick questions plus 2-3 liked links and 1 disliked link
-  with why, then record verdicts for each fixed part into `ranked-parts.json`.
 
 ### Step 7 - Three wireframes
 
@@ -94,10 +97,21 @@ that brief.
 
 - Apply the feedback to the wireframes and re-review until the user
   picks one direction.
+- Gate: never finalize after a single round without an explicit user pick.
+- Always ask "another round or pick?" and record the answer in `design-feedback.md`.
+- Read [references/review-rounds.md](references/review-rounds.md) and
+  follow its checklist before finalizing.
 
 ### Step 11 - design-system.md
 
 - Read [references/system-writer.md](references/system-writer.md).
+- Copy the shipped template [assets/DESIGN-SYSTEM-TEMPLATE.md](assets/DESIGN-SYSTEM-TEMPLATE.md)
+  to `design-system.md` at the run root and fill every section.
 - Write the detailed `design-system.md` (tokens not values, all
   states, layout, breakpoints, animation notes) for the picked
   direction, plus the check-ask-update rule for future deviations.
+
+### Step 12 - External skills
+
+- Read [references/sub-skills.md](references/sub-skills.md).
+- If an external skill below is installed, invoke it by name first; otherwise use the inline reference.
